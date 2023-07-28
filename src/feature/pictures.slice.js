@@ -1,3 +1,5 @@
+import { createSlice } from "@reduxjs/toolkit";
+
 export const picturesSlice = createSlice({
   name: "pictures",
   initialState: {
@@ -5,10 +7,31 @@ export const picturesSlice = createSlice({
   },
   reducers: {
     setPicturesData: (state, action) => {
-      state.picture = action.payload;
+      state.pictures = action.payload;
+    },
+    addPicture: (state, action) => {
+      state.pictures.push(action.payload);
+    },
+    editPicture: (state, action) => {
+      state.pictures = state.pictures.map((pic) => {
+        if (pic.id === action.payload[1]) {
+          return {
+            ...pic,
+            artist: action.payload[0],
+          };
+        } else {
+          return pic;
+        }
+      });
+    },
+    deletePicture: (state, action) => {
+      state.pictures = state.pictures.filter(
+        (pic) => pic.id !== action.payload
+      );
     },
   },
 });
 
 export default picturesSlice.reducer;
-export const { setPicturesData } = picturesSlice.actions;
+export const { setPicturesData, addPicture, editPicture, deletePicture } =
+  picturesSlice.actions;

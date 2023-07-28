@@ -8,7 +8,7 @@
       "id": 1
     },
     {
-      "artist": "Kamau",
+      "artist": "Kamau hey",
       "year": "2005",
       "photo": "https://picsum.photos/400/484",
       "id": 3
@@ -32,12 +32,6 @@
       "id": 6
     },
     {
-      "artist": "Neil Burnell",
-      "year": "2012",
-      "photo": "https://picsum.photos/400/443",
-      "id": 7
-    },
-    {
       "artist": "Jidhun",
       "year": "2009",
       "photo": "https://picsum.photos/400/364",
@@ -48,6 +42,24 @@
       "year": "2021",
       "photo": "https://picsum.photos/400/470",
       "id": 9
+    },
+    {
+      "artist": "Laura",
+      "year": "2017",
+      "photo": "https://picsum.photos/400/485",
+      "id": 10
+    },
+    {
+      "artist": "test ID",
+      "year": "2014",
+      "photo": "https://picsum.photos/400/327",
+      "id": 11
+    },
+    {
+      "artist": "testID2",
+      "year": "2013",
+      "photo": "https://picsum.photos/400/388",
+      "id": 12
     }
   ]
 }
